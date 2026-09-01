@@ -19,22 +19,42 @@ A Go URL-shortening service built around PostgreSQL, Redis, an asynchronous anal
 ## Project structure
 
 ```text
+## Project Structure
+
+```text
 url_shortener/
 ├── main.go
 ├── go.mod
+├── go.sum
 ├── Dockerfile
 ├── docker-compose.yml
-├── sql/schema.sql
-├── internal/
-│   ├── base62/base62.go
-│   ├── cache/cache.go
-│   ├── analytics/worker.go
-│   ├── ratelimit/ratelimit.go
-│   └── store/store.go
-├── nginx/nginx.conf
-├── docs/architecture.md
+├── .dockerignore
+├── .gitignore
+├── README.md
 ├── loadtest-performance.js
-└── rate-limit-test.js
+├── rate-limit-test.js
+│
+├── sql/
+│   └── schema.sql
+│
+├── internal/
+│   ├── base62/
+│   │   └── base62.go
+│   ├── cache/
+│   │   └── cache.go
+│   ├── analytics/
+│   │   └── worker.go
+│   ├── ratelimit/
+│   │   └── ratelimit.go
+│   └── store/
+│       └── store.go
+│
+├── nginx/
+│   └── nginx.conf
+│
+└── docs/
+    └── architecture.md
+
 ```
 
 ## Run locally on Windows
