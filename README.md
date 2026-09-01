@@ -19,7 +19,7 @@ A Go URL-shortening service built around PostgreSQL, Redis, an asynchronous anal
 ## Project structure
 
 ```text
-url-shortener/
+url_shortener/
 ├── main.go
 ├── go.mod
 ├── Dockerfile
@@ -33,7 +33,8 @@ url-shortener/
 │   └── store/store.go
 ├── nginx/nginx.conf
 ├── docs/architecture.md
-└── loadtest.js
+├── loadtest-performance.js
+└── rate-limit-test.js
 ```
 
 ## Run locally on Windows
